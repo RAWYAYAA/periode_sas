@@ -22,7 +22,7 @@ int main(){
 		case 3:
 		   printf("mars");
 		  break;
-		  case 4:
+		 case 4:
 		    printf("avril");
 	     	break;
 		case 5:

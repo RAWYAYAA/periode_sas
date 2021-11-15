@@ -13,7 +13,7 @@ void main()
         if(c < 10){
             printf(" it's very cold. the temperature is %f", c);
         }
-        else if(c > 10 && c < 25){
+        else if( c < 25){
             printf("its cold. the temperature is %f", c);
         }
         else if(c > 25 && c < 35){

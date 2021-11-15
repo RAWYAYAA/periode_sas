@@ -3,25 +3,22 @@
 int main()
 {
     float h1,h2,m1,m2,s1,s2;
-    printf("donner une heure,h1");
-    scanf("%f",&h1);
-    printf("donner une heure,h2");
-    scanf("%f",&h2);
-    printf("donner une minute,m1");
-    scanf("%f",&m1);
-    printf("donner une minute,m2");
-    scanf("%f",&m2);
-    printf("donner une seconde,s1");
-    scanf("%f",&s1);
-    printf("donner une seconde ,s2");
-    scanf("%f",&s2);
-    if(h1==h2 && m1==m2 && s1==s2)
-    printf("premier instant");
-    else if (h1<h2 && m1<m2 && s1==s2)
-    printf("deuxieme instant");
+    printf("donner t1 (HH:MM:SS) : ");
+    scanf("%f:%f:%f",&h1,&m1,&s1);
+    printf("donner t2 (HH:MM:SS) : ");
+    scanf("%f:%f:%f",&h2,&m2,&s2);
+    
+    int t1,t2;
+    t1 = h1*60*60 + m1*60 + s1;
+    t2 = h2*60*60 + m2*60 + s2;
+    if(t1 < t2)
+    	printf("t1 avant t2");
+    else if (t1>t2)
+    	printf("t1 apres t2");
     else 
-    printf("il s'agit du mm instant");
+    	printf("ils devient de meme instant");
+    	
     return(0);
-    
-    
 }
+
+
